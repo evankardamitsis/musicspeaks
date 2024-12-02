@@ -18,3 +18,13 @@ body {
   color: var(--foreground);
   background: var(--background);
 }
+
+::-moz-selection { /* Code for Firefox */
+  color: yellow;
+  background: #082FFF;
+}
+
+::selection {
+  color: yellow;
+  background: #082FFF;
+}

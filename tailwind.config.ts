@@ -11,6 +11,8 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        lineColor: "#00135c",
+        backColor: "#defffa",
       },
     },
   },

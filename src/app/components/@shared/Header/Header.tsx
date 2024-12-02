@@ -15,10 +15,10 @@ const Header: React.FC = () => {
 
     return (
         <header className="sticky top-0 z-50">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="w-full mx-auto px-4 sm:px-6 lg:px-3">
                 <div className="flex justify-between items-center h-16">
-                    {/* Blog Link */}
-                    <div className="hidden md:flex">
+                    {/* Left Section (Blog Link) */}
+                    <div className="hidden md:flex flex-1 justify-start">
                         <a
                             href="/blog"
                             className="text-black relative group font-bold text-sm transform transition-transform duration-300 ease-in-out hover:scale-105"
@@ -29,14 +29,14 @@ const Header: React.FC = () => {
                     </div>
 
                     {/* Logo */}
-                    <div className="flex items-center justify-center flex-grow">
+                    <div className="flex-shrink-0 flex items-center justify-center">
                         <Link href="/" className="text-black text-xl font-bold">
                             <Logo />
                         </Link>
                     </div>
 
-                    {/* Desktop Menu */}
-                    <div className="hidden md:flex space-x-8">
+                    {/* Right Section (Menu Items) */}
+                    <div className="hidden md:flex flex-1 justify-end space-x-8">
                         {['about', 'services', 'contact'].map((item) => (
                             <a
                                 key={item}
