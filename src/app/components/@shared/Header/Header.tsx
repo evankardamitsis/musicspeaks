@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, {useEffect, useState} from 'react';
 import { Transition } from '@headlessui/react';
 import Logo from '@/app/components/@shared/Logo';
 import Hamburger from '@/app/components/@shared/BurgerIcon/Hamburger';
@@ -8,14 +8,35 @@ import Link from "next/link";
 
 const Header: React.FC = () => {
     const [isOpen, setIsOpen] = useState(false);
+    const [isScrolled, setIsScrolled] = useState(false);
 
     const toggleMenu = () => {
         setIsOpen((prev) => !prev);
     };
 
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY > 10) {
+                setIsScrolled(true);
+            } else {
+                setIsScrolled(false);
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
     return (
-        <header className="sticky top-0 z-50">
-            <div className="w-full mx-auto px-4 sm:px-6 lg:px-3">
+        <header
+            className={`sticky top-0 z-50 transition-colors duration-300 ${
+                isScrolled ? 'bg-white/80 backdrop-blur-md shadow-md rounded-full' : 'bg-transparent rounded-full'
+            }`}
+        >
+            <div className="w-full mx-auto px-4 sm:px-6 lg:px-4">
                 <div className="flex justify-between items-center h-16">
                     {/* Left Section (Blog Link) */}
                     <div className="hidden md:flex flex-1 justify-start">
@@ -24,14 +45,15 @@ const Header: React.FC = () => {
                             className="text-black relative group font-bold text-sm transform transition-transform duration-300 ease-in-out hover:scale-105"
                         >
                             blog
-                            <span className="absolute left-0 bottom-0 w-full h-[2px] bg-gradient-to-r from-yellow-500 via-black to-yellow-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-500 ease-in-out"></span>
+                            <span
+                                className="absolute left-0 bottom-0 w-full h-[2px] bg-gradient-to-r from-yellow-500 via-black to-yellow-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-500 ease-in-out"></span>
                         </a>
                     </div>
 
                     {/* Logo */}
                     <div className="flex-shrink-0 flex items-center justify-center">
                         <Link href="/" className="text-black text-xl font-bold">
-                            <Logo />
+                            <Logo/>
                         </Link>
                     </div>
 
@@ -44,14 +66,15 @@ const Header: React.FC = () => {
                                 className="text-black relative group font-bold text-sm transform transition-transform duration-300 ease-in-out hover:scale-105"
                             >
                                 {item}
-                                <span className="absolute left-0 bottom-0 w-full h-[2px] bg-gradient-to-r from-yellow-500 via-black to-yellow-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-500 ease-in-out"></span>
+                                <span
+                                    className="absolute left-0 bottom-0 w-full h-[2px] bg-gradient-to-r from-yellow-500 via-black to-yellow-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-500 ease-in-out"></span>
                             </a>
                         ))}
                     </div>
 
                     {/* Hamburger Menu */}
                     <div className="flex md:hidden">
-                        <Hamburger isOpen={isOpen} onToggle={toggleMenu} />
+                        <Hamburger isOpen={isOpen} onToggle={toggleMenu}/>
                     </div>
                 </div>
             </div>
@@ -66,7 +89,8 @@ const Header: React.FC = () => {
                 leaveFrom="opacity-100 "
                 leaveTo="opacity-0"
             >
-                <div className="md:hidden fixed inset-0 bg-yellow-300 flex flex-col items-center justify-center space-y-8">
+                <div
+                    className="md:hidden fixed inset-0 bg-yellow-300 flex flex-col items-center justify-center space-y-8">
                     {['blog', 'about', 'services', 'contact'].map((item) => (
                         <a
                             key={item}
