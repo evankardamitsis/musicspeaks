@@ -39,7 +39,7 @@ const Header: React.FC = () => {
             <div className="w-full mx-auto px-4 sm:px-6 lg:px-4">
                 <div className="flex justify-between items-center h-16">
                     {/* Left Section (Blog Link) */}
-                    <div className="hidden md:flex flex-1 justify-start">
+                    <div className="hidden md:flex flex-1 justify-start ml-4">
                         <a
                             href="/blog"
                             className="text-black relative group font-bold text-sm transform transition-transform duration-300 ease-in-out hover:scale-105"
@@ -58,7 +58,7 @@ const Header: React.FC = () => {
                     </div>
 
                     {/* Right Section (Menu Items) */}
-                    <div className="hidden md:flex flex-1 justify-end space-x-8">
+                    <div className="hidden md:flex flex-1 justify-end space-x-8 mr-4">
                         {['about', 'services', 'contact'].map((item) => (
                             <a
                                 key={item}
@@ -90,7 +90,7 @@ const Header: React.FC = () => {
                 leaveTo="opacity-0"
             >
                 <div
-                    className="md:hidden fixed inset-0 bg-yellow-300 flex flex-col items-center justify-center space-y-8">
+                    className="md:hidden fixed inset-0 bg-yellow-300 flex flex-col items-center justify-center space-y-8 h-screen ">
                     {['blog', 'about', 'services', 'contact'].map((item) => (
                         <a
                             key={item}

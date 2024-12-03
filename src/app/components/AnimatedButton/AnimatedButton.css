@@ -1,4 +1,5 @@
 /* From Uiverse.io by himanshu9682 */
+/* Default styles */
 .type--A {
     --line_color: black;
     --back_color: #ffecf6;
@@ -11,6 +12,32 @@
     --line_color: black;
     --back_color: #defffa;
 }
+
+/* Reverse styles */
+.type--A-reverse {
+    --line_color: white;
+    --back_color: #ffecf6;
+}
+.type--B-reverse {
+    --line_color: white;
+    --back_color: #e9ecff;
+}
+.type--C-reverse {
+    --line_color: white;
+    --back_color: #defffa;
+}
+
+/* Shared styles for reversed buttons */
+.button--reverse {
+    color: white;
+    border-color: white;
+}
+
+/* Optional hover effect for reversed buttons */
+.button--reverse:hover {
+    color: black;
+}
+
 .button {
     position: relative;
     z-index: 0;

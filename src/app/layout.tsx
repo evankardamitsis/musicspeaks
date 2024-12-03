@@ -20,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={manrope.className}>
-      <body className={"bg-[#E6D800]"} >
+      <body className={"bg-[#FFEE07]"} >
         {children}
       </body>
     </html>

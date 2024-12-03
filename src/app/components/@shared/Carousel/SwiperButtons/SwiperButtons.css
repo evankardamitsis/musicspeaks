@@ -1,0 +1,23 @@
+.swiper-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #082FFF;
+    opacity: 0.9;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.swiper-btn:hover {
+    background: linear-gradient(to right, #ffc107, #082FFF);
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    fill: white;
+}
