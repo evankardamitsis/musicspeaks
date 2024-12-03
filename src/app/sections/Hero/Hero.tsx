@@ -11,7 +11,7 @@ const Hero = () => {
         >
             {/* Content */}
             <div className={"flex items-center justify-center flex-col"} >
-                <HeroHeading className="w-[80%] max-w-md sm:max-w-xl lg:max-w-3xl xl:max-w-4xl m-auto"/>
+                <HeroHeading className="w-[80%] max-w-md sm:max-w-xl lg:max-w-3xl xl:max-w-4xl m-auto lg:mt-12 mt-4"/>
                 <div>
                     <div className="flex justify-center items-center flex-col mt-4">
                         <h2 className="text-black font-bold text-center text-lg max-w-4xl mb-4 mt-16 leading-loose">
