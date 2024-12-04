@@ -9,9 +9,9 @@ const YellowIcon = ({
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 111 600"
+            viewBox="-50 -250 200 700"
             preserveAspectRatio="xMidYMid meet"
-            className={`w-full h-auto ${animate ? "animate-bounce" : ""} ${className}`}
+            className={`w-10 h-10 ${animate ? "animate-bounce" : ""} ${className}`}
             style={{
                 filter: animate
                     ? "drop-shadow(0px 6px 8px rgba(255, 255, 255, 0.8))"
