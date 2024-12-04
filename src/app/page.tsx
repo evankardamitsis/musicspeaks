@@ -4,6 +4,7 @@ import Hero from "@/app/sections/Hero/Hero";
 import About from "@/app/sections/About/About";
 import Services from "@/app/sections/Services/Services";
 import Collaborators from "@/app/sections/Collaborators/Collaborators";
+import Artists from "@/app/sections/Artists/Artists";
 
 export default function Home() {
   return (
@@ -17,7 +18,10 @@ export default function Home() {
               <Services/>
           </div>
           <div className={"lg:my-[10%] w-full"}>
-              <Collaborators />
+              <Collaborators/>
+          </div>
+          <div className={"lg:my-[10%] w-full"}>
+              <Artists/>
           </div>
       </Container>
   );
