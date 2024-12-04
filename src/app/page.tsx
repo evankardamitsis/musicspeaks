@@ -5,6 +5,8 @@ import About from "@/app/sections/About/About";
 import Services from "@/app/sections/Services/Services";
 import Collaborators from "@/app/sections/Collaborators/Collaborators";
 import Artists from "@/app/sections/Artists/Artists";
+import Footer from "@/app/sections/Footer/Footer";
+import FooterBottom from "@/app/sections/Footer/FooterBottom/FooterBottom";
 
 export default function Home() {
   return (
@@ -20,9 +22,13 @@ export default function Home() {
           <div className={"lg:my-[10%] w-full"}>
               <Collaborators/>
           </div>
-          <div className={"lg:my-[10%] w-full"}>
+          <div className={"lg:mt-[10%] w-full"}>
               <Artists/>
           </div>
+          <Footer/>
+          <div className={"lg:mb-[0.2%] w-full"}>
+              <FooterBottom/>
+          </div>
       </Container>
-  );
+);
 }

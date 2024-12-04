@@ -13,7 +13,7 @@ const Artists = () => {
 
     const images = [
         { src: galani.src, alt: "Galani", name:"Δήμητρα Γαλάνη" },
-        { src: artist1.src, alt: "Artist" },
+        { src: artist1.src, alt: "Vaggelis Lazopoulos ", name: "Βαγγέλης Λαζόπουλος " },
         { src: artist2.src, alt: "Artist" },
         { src: artist3.src, alt: "Artist" },
         { src: guppy.src, alt: "Guppy", name: "Guppy Fish" },
