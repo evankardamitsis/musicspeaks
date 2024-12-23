@@ -40,17 +40,20 @@ Your image plays a big role in this, encompassing elements like your logo, color
 
   return (
     <div
-      className="min-h-[110vh] flex items-center justify-center bg-no-repeat bg-center relative"
+      className="min-h-[110vh] flex items-center justify-center bg-no-repeat bg-center bg-cover relative py-8 sm:py-16"
       style={{ backgroundImage: `url(${servicesBg.src})` }}
     >
-      <div className="flex items-center justify-center flex-col text-center p-4">
-        <ServicesHeading />
+      <div className="w-full max-w-[90%] md:max-w-none mx-auto flex flex-col items-center">
+        <ServicesHeading className="mb-8" />
 
-        {/* Carousel */}
-        <Carousel cards={cards} />
+        {/* Carousel Container */}
+        <div className="w-full">
+          <Carousel cards={cards} />
+        </div>
+
         <a
           href="#"
-          className="bg-white text-black px-8 py-3 rounded-full font-medium text-lg hover:bg-gray-100 transition-colors duration-300"
+          className="bg-white text-black px-6 md:px-8 py-2.5 md:py-3 rounded-full font-medium text-base md:text-lg hover:bg-gray-100 transition-colors duration-300 mt-8"
         >
           let&apos;s talk!
         </a>

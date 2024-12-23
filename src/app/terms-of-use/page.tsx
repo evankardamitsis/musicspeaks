@@ -8,7 +8,7 @@ const TermsOfUse = () => {
   return (
     <Container>
       <Header />
-      <div className="py-16 px-4 max-w-4xl mx-auto">
+      <div className="py-16 px-4 md:px-8">
         <h1 className="text-4xl font-bold mb-8">Terms and Conditions</h1>
 
         <div className="prose prose-lg max-w-none">
