@@ -10,25 +10,17 @@ import FooterBottom from "@/app/sections/Footer/FooterBottom/FooterBottom";
 
 export default function Home() {
   return (
-      <Container>
-          <Header/>
-          <Hero/>
-          <div className={"lg:my-[10%] w-full"}>
-              <About/>
-          </div>
-          <div className={"lg:my-[10%] w-full"}>
-              <Services/>
-          </div>
-          <div className={"lg:my-[10%] w-full"}>
-              <Collaborators/>
-          </div>
-          <div className={"lg:mt-[10%] w-full"}>
-              <Artists/>
-          </div>
-          <Footer/>
-          <div className={"lg:mb-[0.2%] w-full"}>
-              <FooterBottom/>
-          </div>
-      </Container>
-);
+    <Container>
+      <Header />
+      <Hero />
+      <About />
+      <Services />
+      <Collaborators />
+      <Artists />
+      <Footer />
+      <div className={"lg:mb-[0.2%] w-full"}>
+        <FooterBottom />
+      </div>
+    </Container>
+  );
 }

@@ -1,9 +1,8 @@
 import * as React from "react"
-const ServicesHeading = (props: React.JSX.IntrinsicAttributes & React.SVGProps<SVGSVGElement>) => (
+const ServicesHeading = (props: React.SVGProps<SVGSVGElement>) => (
     <svg
         xmlns="http://www.w3.org/2000/svg"
-        width={516}
-        height={162}
+        viewBox="0 0 516 162"
         fill="none"
         {...props}
     >

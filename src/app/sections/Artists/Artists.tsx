@@ -23,7 +23,7 @@ const Artists = () => {
 
   return (
     <div
-      className="min-h-[120vh] flex items-center justify-center bg-no-repeat bg-center relative"
+      className="min-h-[120vh] flex items-center justify-center bg-no-repeat bg-fit relative"
       style={{ backgroundImage: `url(${artistsBg.src})` }}
     >
       <div className="flex items-center justify-center flex-col text-center p-4">

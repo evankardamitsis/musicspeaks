@@ -2,7 +2,7 @@ import React from "react";
 
 const FooterBottom = () => {
   return (
-    <div className="min-h-[28vh] mt-16 sm:mt-32 flex flex-col items-center justify-center bg-black/90 p-6 sm:p-12 backdrop-blur-md shadow-md rounded-3xl sm:rounded-full">
+    <div className="min-h-[28vh] mt-16 sm:mt-32 flex flex-col items-center justify-center bg-black/90 p-6 sm:p-12 backdrop-blur-md shadow-md">
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 text-white text-sm w-full max-w-5xl px-4">
         {/* Left Column */}
         <div className="flex flex-col items-center lg:items-start space-y-4">
@@ -51,7 +51,7 @@ const FooterBottom = () => {
           <a href="/privacy-policy">Privacy Policy</a>
           <a href="/terms-of-use">Terms of Use</a>
         </div>
-        
+
         {/* Credits - Full width on mobile */}
         <div className="col-span-1 lg:col-span-3 text-center mt-8">
           <p className="text-white text-xs">
