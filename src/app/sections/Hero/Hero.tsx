@@ -5,13 +5,13 @@ import heroBg from "@/app/assets/hero_bg.png";
 const Hero = () => {
   return (
     <div
-      className="min-h-screen md:h-[80vh] flex items-center justify-center bg-no-repeat bg-cover bg-center"
+      className="min-h-screen md:h-[80vh] flex items-center justify-center bg-no-repeat bg-cover md:bg-center bg-[center_left_-42rem]"
       style={{ backgroundImage: `url(${heroBg.src})` }}
     >
       <div className="w-full px-6 md:px-8">
         <div className="flex flex-col items-center">
           {/* Heading */}
-          <div className="w-full max-w-[280px] sm:max-w-xl md:max-w-2xl lg:max-w-4xl mx-auto mb-12 md:mb-16">
+          <div className="w-full  sm:max-w-xl lg:max-w-2xl mx-auto mb-12 md:mb-16">
             <HeroHeading />
           </div>
 
