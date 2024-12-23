@@ -40,13 +40,14 @@ Your image plays a big role in this, encompassing elements like your logo, color
 
   return (
     <div
-      className="min-h-[110vh] flex items-center justify-center bg-no-repeat bg-center bg-fit relative py-8 sm:py-16"
+      id="services"
+      className="min-h-[110vh] flex items-center justify-center bg-no-repeat bg-center bg-fit relative"
       style={{ backgroundImage: `url(${servicesBg.src})` }}
     >
       <div className="w-full max-w-[90%] md:max-w-none mx-auto flex flex-col items-center">
         {/* Heading Container */}
-        <div className="w-[280px] sm:w-[400px] md:w-auto mb-12">
-          <ServicesHeading className="w-full min-w-[40vw] h-auto mt-20" />
+        <div className="w-full max-w-[300px] sm:max-w-[400px] lg:max-w-[500px] ">
+          <ServicesHeading className="mt-8 sm:mt-16 md:mt-32" />
         </div>
 
         {/* Carousel Container */}

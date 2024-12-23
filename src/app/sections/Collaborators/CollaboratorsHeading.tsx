@@ -1,9 +1,9 @@
 import * as React from "react"
-const CollaboratorsHeading = (props: React.JSX.IntrinsicAttributes & React.SVGProps<SVGSVGElement>) => (
+
+const CollaboratorsHeading = (props: React.SVGProps<SVGSVGElement>) => (
     <svg
         xmlns="http://www.w3.org/2000/svg"
-        width={777}
-        height={207}
+        viewBox="0 0 777 207"
         fill="none"
         {...props}
     >

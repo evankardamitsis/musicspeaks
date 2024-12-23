@@ -17,7 +17,7 @@ const Card: React.FC<CardProps> = ({
 }) => {
   return (
     <div
-      className={`relative bg-white shadow-md p-12 md:p-8 w-full max-w-sm mx-auto flex flex-col min-h-[500px] ${className}`}
+      className={`relative bg-white shadow-md p-16 w-full max-w-sm mx-auto flex flex-col min-h-[500px] ${className}`}
       style={{
         clipPath: "polygon(5% 0%, 95% 0%, 100% 100%, 0% 100%)",
       }}

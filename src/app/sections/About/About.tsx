@@ -5,13 +5,14 @@ import AboutHeading from "@/app/sections/About/AboutHeading";
 const About = () => {
   return (
     <div
+      id="about"
       className="min-h-screen md:min-h-[70vh] flex items-center justify-center bg-no-repeat bg-center bg-cover relative"
       style={{ backgroundImage: `url(${aboutBg.src})` }}
     >
       <div className="w-full max-w-[90%] mx-auto flex flex-col items-center">
         {/* Heading */}
-        <div className="w-full flex justify-center mb-12">
-          <AboutHeading className="w-[90%] sm:w-auto" />
+        <div className="w-full max-w-[300px] sm:max-w-[400px] lg:max-w-[500px] mb-8 sm:mb-12">
+          <AboutHeading className="ml-12" />
         </div>
 
         {/* Subheadings */}

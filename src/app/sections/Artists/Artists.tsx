@@ -23,20 +23,23 @@ const Artists = () => {
 
   return (
     <div
-      className="min-h-[120vh] flex items-center justify-center bg-no-repeat bg-fit relative"
+      className="h-auto p-8 lg:min-h-screen md:h-[80vh] flex items-center justify-center bg-no-repeat bg-fit md:bg-center bg-[center_left_-18rem]"
       style={{ backgroundImage: `url(${artistsBg.src})` }}
     >
-      <div className="flex items-center justify-center flex-col text-center p-4">
-        <ArtistsHeading />
+      <div className="flex items-center justify-center flex-col text-center p-4 w-full max-w-[95%] lg:max-w-[90%] mx-auto">
+        <div className="w-full max-w-[300px] sm:max-w-[400px] lg:max-w-[500px] mb-8 sm:mb-12">
+          <ArtistsHeading />
+        </div>
+
         {/* IconImage Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-8 w-full min-w-[30vw]">
+        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 mt-8 w-full max-w-[95%] lg:max-w-[80%]">
           {images.map((image, index) => (
             <IconImage
               key={index}
               src={image.src}
               alt={image.alt}
               name={image.name}
-              className="shadow-lg"
+              className="shadow-lg !w-36 !h-36 sm:!w-44 sm:!h-44 md:!w-52 md:!h-52 mx-auto"
             />
           ))}
         </div>

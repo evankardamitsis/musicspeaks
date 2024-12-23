@@ -1,9 +1,9 @@
 import * as React from "react"
-const ArtistsHeading = (props: React.JSX.IntrinsicAttributes & React.SVGProps<SVGSVGElement>) => (
+
+const ArtistsHeading = (props: React.SVGProps<SVGSVGElement>) => (
     <svg
         xmlns="http://www.w3.org/2000/svg"
-        width={378}
-        height={197}
+        viewBox="0 0 378 197"
         fill="none"
         {...props}
     >

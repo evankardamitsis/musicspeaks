@@ -16,7 +16,9 @@ export default function Home() {
       <About />
       <Services />
       <Collaborators />
-      <Artists />
+      <div className="my-[20%]">
+        <Artists />
+      </div>
       <Footer />
       <div className={"lg:mb-[0.2%] w-full"}>
         <FooterBottom />

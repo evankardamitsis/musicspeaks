@@ -5,10 +5,10 @@ import FooterHeading from "@/app/sections/Footer/FooterHeading";
 const Footer = () => {
   return (
     <div
-      className="min-h-[90vh] flex items-center justify-center bg-no-repeat bg-center bg-fit relative"
+      className="h-screen flex items-center justify-center bg-no-repeat bg-center bg-fit relative"
       style={{ backgroundImage: `url(${footerBg.src})` }}
     >
-      <div className="flex items-center justify-center flex-col text-center p-4 w-full max-w-3xl mx-auto">
+      <div className="flex items-center justify-center flex-col text-center p-4 w-full max-w-2xl mx-auto">
         <FooterHeading />
       </div>
     </div>

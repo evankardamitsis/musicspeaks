@@ -2,8 +2,8 @@ import * as React from "react"
 const AboutHeading = (props: React.JSX.IntrinsicAttributes & React.SVGProps<SVGSVGElement>) => (
     <svg
         xmlns="http://www.w3.org/2000/svg"
-        width={516}
-        height={162}
+        viewBox="0 0 378 197"
+        fill="none"
         {...props}
     >
         <path fill="#082FFF" d="M30 45.241h177v41H30z" />

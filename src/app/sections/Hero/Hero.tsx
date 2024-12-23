@@ -5,7 +5,7 @@ import heroBg from "@/app/assets/hero_bg.png";
 const Hero = () => {
   return (
     <div
-      className="h-auto p-8 lg:min-h-screen md:h-[80vh] flex items-center justify-center bg-no-repeat bg-fit md:bg-center bg-[center_left_-18rem]"
+      className="h-auto p-8 lg:min-h-screen md:h-[80vh] flex items-center justify-center bg-no-repeat bg-fit md:bg-center bg-[center_left_-20rem]"
       style={{ backgroundImage: `url(${heroBg.src})` }}
     >
       <div className="w-full px-6 md:px-8">
