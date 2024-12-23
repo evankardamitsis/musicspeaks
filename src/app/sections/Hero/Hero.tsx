@@ -5,28 +5,35 @@ import heroBg from "@/app/assets/hero_bg.png";
 const Hero = () => {
   return (
     <div
-      className="h-[80vh] flex items-center justify-center bg-no-repeat bg-center "
+      className="min-h-screen md:h-[80vh] flex items-center justify-center bg-no-repeat bg-cover bg-center"
       style={{ backgroundImage: `url(${heroBg.src})` }}
     >
-      {/* Content */}
-      <div className={"flex items-center justify-center flex-col"}>
-        <HeroHeading className="w-[80%] max-w-md sm:max-w-xl lg:max-w-3xl xl:max-w-4xl m-auto lg:mt-12 mt-4" />
-        <div>
-          <div className="flex justify-center items-center flex-col mt-4">
-            <h2 className="text-black font-bold text-center text-lg max-w-4xl mb-4 mt-16 leading-loose">
+      <div className="w-full px-6 md:px-8">
+        <div className="flex flex-col items-center">
+          {/* Heading */}
+          <div className="w-full max-w-[280px] sm:max-w-xl md:max-w-2xl lg:max-w-4xl mx-auto mb-12 md:mb-16">
+            <HeroHeading />
+          </div>
+
+          {/* Text Content */}
+          <div className="w-full max-w-[280px] sm:max-w-xl md:max-w-2xl mx-auto">
+            <p className="text-black text-center text-sm sm:text-base md:text-lg leading-relaxed mb-8">
               We are dedicated to{" "}
-              <span className={"bg-[#082FFF] mx-2 text-white text-xl p-1"}>
-                empowering independent artists{" "}
+              <span className="bg-[#082FFF] text-white px-2 py-1 mx-1">
+                empowering independent artists
               </span>{" "}
               through targeted paid media, creative promotional campaigns and
               customized digital music marketing.
-            </h2>
-            <a
-              href="#"
-              className="bg-[#082FFF] text-white px-8 py-3 rounded-full font-medium text-lg hover:bg-[#0626CC] transition-colors duration-300"
-            >
-              let&apos;s do it!
-            </a>
+            </p>
+
+            <div className="text-center">
+              <a
+                href="#"
+                className="inline-block bg-[#082FFF] text-white px-6 py-2.5 rounded-full text-sm md:text-base hover:bg-[#0626CC] transition-colors duration-300"
+              >
+                let&apos;s do it!
+              </a>
+            </div>
           </div>
         </div>
       </div>
