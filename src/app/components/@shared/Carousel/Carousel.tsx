@@ -33,17 +33,11 @@ const Carousel: React.FC<CarouselProps> = ({ cards }) => {
   };
 
   return (
-    <div className="relative w-full max-w-4xl mx-auto">
+    <div className="relative w-full max-w-5xl mx-auto">
       <Swiper
-        spaceBetween={5}
+        spaceBetween={50}
         slidesPerView={1}
         loop={true}
-        breakpoints={{
-          768: {
-            slidesPerView: 2,
-            spaceBetween: 5,
-          },
-        }}
         modules={[Navigation, Pagination]}
         pagination={{ clickable: true }}
         onSwiper={(swiper) => {

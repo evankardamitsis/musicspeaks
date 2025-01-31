@@ -16,11 +16,11 @@ export default function Home() {
       <About />
       <Services />
       <Collaborators />
-      <div className="my-[20%]">
+      <div className="mt-[10%]">
         <Artists />
       </div>
       <Footer />
-      <div className={"lg:mb-[0.2%] w-full"}>
+      <div className={" w-full"}>
         <FooterBottom />
       </div>
     </Container>

@@ -3,7 +3,7 @@ import React from "react";
 interface CardProps {
   title: string;
   subtitle?: string;
-  content: string | React.ReactNode;
+  content: string;
   icons?: React.ReactNode;
   className?: string;
 }
@@ -17,7 +17,7 @@ const Card: React.FC<CardProps> = ({
 }) => {
   return (
     <div
-      className={`relative bg-white shadow-md p-16 w-full max-w-sm mx-auto flex flex-col min-h-[500px] ${className}`}
+      className={`relative bg-white shadow-md lg:p-20 p-16 w-full max-w-4xl mx-auto flex flex-col min-h-[400px] ${className}`}
       style={{
         clipPath: "polygon(5% 0%, 95% 0%, 100% 100%, 0% 100%)",
       }}
@@ -34,7 +34,10 @@ const Card: React.FC<CardProps> = ({
         </h4>
       )}
 
-      <div className="text-gray-700 mt-4 text-left flex-grow">{content}</div>
+      <div
+        className="text-gray-700 mt-4 text-left flex-grow"
+        dangerouslySetInnerHTML={{ __html: content }}
+      />
     </div>
   );
 };

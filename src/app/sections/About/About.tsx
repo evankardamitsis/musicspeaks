@@ -15,8 +15,22 @@ const About = () => {
           <AboutHeading className="ml-12" />
         </div>
 
+        {/* Description */}
+        <div className="text-white text-center max-w-2xl lg:mt-[-5rem] ">
+          <p className="text-sm sm:text-base leading-relaxed">
+            <span className="bg-[#082FFF] px-2 py-1 font-medium inline-block mb-2">
+              Your music deserves to be heard,
+            </span>{" "}
+            and with well-crafted music marketing strategies, you can increase
+            your visibility and make a lasting impact in the music industry.
+            Whether you are releasing a new album, dropping a single, or
+            planning a tour, effective music promotion strategies ensure your
+            music doesn&apos;t go unnoticed.
+          </p>
+        </div>
+
         {/* Subheadings */}
-        <div className="flex flex-col md:flex-row md:justify-center gap-4 sm:gap-6 mb-8 sm:mb-12 w-full max-w-4xl">
+        <div className="flex flex-col md:flex-row md:justify-center gap-4 sm:gap-6 mb-8 sm:mb-12 w-full max-w-4xl mt-12">
           {[
             "PROMOTE A NEW RELEASE",
             "INCREASE TICKET SALES",
@@ -29,20 +43,6 @@ const About = () => {
               <h3 className="text-base sm:text-lg font-semibold">{text}</h3>
             </div>
           ))}
-        </div>
-
-        {/* Description */}
-        <div className="text-white text-center max-w-2xl">
-          <p className="text-sm sm:text-base leading-relaxed">
-            <span className="bg-[#082FFF] px-2 py-1 font-medium inline-block mb-2">
-              Your music deserves to be heard,
-            </span>{" "}
-            and with well-crafted music marketing strategies, you can increase
-            your visibility and make a lasting impact in the music industry.
-            Whether you are releasing a new album, dropping a single, or
-            planning a tour, effective music promotion strategies ensure your
-            music doesn&apos;t go unnoticed.
-          </p>
         </div>
       </div>
     </div>
