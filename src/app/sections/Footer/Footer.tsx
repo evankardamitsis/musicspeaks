@@ -5,6 +5,7 @@ import FooterHeading from "@/app/sections/Footer/FooterHeading";
 const Footer = () => {
   return (
     <div
+      id="footer"
       className="h-screen flex items-center justify-center bg-no-repeat bg-center bg-fit relative"
       style={{ backgroundImage: `url(${footerBg.src})` }}
     >

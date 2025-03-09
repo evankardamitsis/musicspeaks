@@ -64,11 +64,10 @@ const Header: React.FC = () => {
 
   return (
     <header
-      className={`sticky top-0 z-50 transition-colors duration-300 ${
-        isScrolled
-          ? "bg-white/80 backdrop-blur-md shadow-md rounded-full"
-          : "bg-transparent rounded-full"
-      }`}
+      className={`sticky top-0 z-50 transition-colors duration-300 ${isScrolled
+        ? "bg-white/80 backdrop-blur-md shadow-md rounded-full"
+        : "bg-transparent rounded-full"
+        }`}
     >
       <div className="w-full mx-auto px-4 sm:px-6 lg:px-4">
         <div className="flex justify-between items-center h-16">
@@ -122,10 +121,10 @@ const Header: React.FC = () => {
         leaveFrom="opacity-100"
         leaveTo="opacity-0"
       >
-        <div className="md:hidden fixed inset-0 bg-yellow-300 flex flex-col items-center justify-center space-y-8 h-screen">
+        <div className="md:hidden fixed inset-0 bg-[#FDEE09] flex flex-col items-center justify-center space-y-8 h-screen">
           <Link
             href="/blog"
-            className="text-black text-2xl font-semibold relative group"
+            className="text-black text-2xl font-semibold relative group transform transition-transform duration-300 ease-in-out hover:scale-105"
             onClick={() => setIsOpen(false)}
           >
             blog
@@ -135,9 +134,10 @@ const Header: React.FC = () => {
               key={item.name}
               href={item.href}
               onClick={(e) => handleScroll(e, item.href)}
-              className="text-black text-2xl font-semibold relative group"
+              className="text-black text-2xl font-semibold relative group transform transition-transform duration-300 ease-in-out hover:scale-105"
             >
               {item.name}
+              <span className="absolute left-0 bottom-0 w-full h-[2px] bg-gradient-to-r from-yellow-500 via-black to-yellow-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-500 ease-in-out"></span>
             </a>
           ))}
         </div>
