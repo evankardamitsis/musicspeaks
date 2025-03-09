@@ -10,8 +10,8 @@ const FooterBottom = () => {
         {/* Left Column */}
         <div className="flex flex-col items-center lg:items-start space-y-4">
           <div>
-            <a href="mailto:contact@example.com" className="font-bold">
-              contact@example.com
+            <a href="mailto:info@musicspeaks.gr" className="font-bold">
+              info@musicspeaks.gr
             </a>
           </div>
           <div>
