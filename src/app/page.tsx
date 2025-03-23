@@ -2,6 +2,7 @@ import Container from "@/app/components/@shared/Container";
 import Header from "@/app/components/@shared/Header/Header";
 import Hero from "@/app/sections/Hero/Hero";
 import About from "@/app/sections/About/About";
+import Features from "@/app/sections/Features/Features";
 import Services from "@/app/sections/Services/Services";
 import Collaborators from "@/app/sections/Collaborators/Collaborators";
 import Artists from "@/app/sections/Artists/Artists";
@@ -14,6 +15,7 @@ export default function Home() {
       <Header />
       <Hero />
       <About />
+      <Features />
       <Services />
       <Collaborators />
       <div className="mt-[10%]">

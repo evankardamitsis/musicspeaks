@@ -8,7 +8,7 @@ const Services = () => {
   const cards = [
     <Card
       key="1"
-      title="amplifying your reach"
+      title="Run Targeted Music Ads"
       subtitle="Targeted advertising on platforms like Facebook, Instagram, Google, YouTube, TikTok, and Spotify ensures your music reaches the right audience at the right time."
       content="
         <ul style='list-style-type: disc; padding-left: 1.5rem; margin-bottom: 1rem;'>
@@ -22,17 +22,17 @@ const Services = () => {
     />,
     <Card
       key="2"
-      title="offer a unique music experience"
-      subtitle="Promoting your music is about creating a connection with your audience. Here’s how I make your music stand out:"
+      title="Create Engaging Music Campaigns"
+      subtitle="Promoting your music is about creating a connection with your audience. Here's how I make your music stand out:"
       content="
         <ul style='list-style-type: disc; padding-left: 1.5rem; margin-bottom: 1rem;'>
-          <li class='mb-3'><strong>Storytelling Through Campaigns:</strong> I create campaigns that tell the story behind your music—whether it’s the inspiration for a new release or the excitement of an upcoming live show. For example:
+          <li class='mb-3'><strong>Storytelling Through Campaigns:</strong> I create campaigns that tell the story behind your music—whether it's the inspiration for a new release or the excitement of an upcoming live show. For example:
           <ul style='list-style-type: disc; padding-left: 1.5rem; margin-bottom: 1rem;'>
            <li class='ml-2 py-2'>A behind-the-scenes series leading up to your next release.
            </li>
           </ul>
           </li>
-           <li class='mb-3'><strong>Interactive Audience Engagement:</strong> Engaging with fans is key. I’ll develop creative ways to involve your audience, such as:
+           <li class='mb-3'><strong>Interactive Audience Engagement:</strong> Engaging with fans is key. I'll develop creative ways to involve your audience, such as:
           <ul style='list-style-type: disc; padding-left: 1.5rem; margin-bottom: 1rem;'>
            <li class='ml-2 py-2'>Hosting an Instagram takeover where you share a day in your life as an artist.
            </li>
@@ -52,17 +52,17 @@ const Services = () => {
     />,
     <Card
       key="3"
-      title="make your mark as an artist"
-      subtitle="Your brand is your identity—it’s how your audience connects with you and what sets you apart in the music industry. Here’s how we’ll shape it together:"
+      title="Develop Your Artist Brand"
+      subtitle="Your brand is your identity—it's how your audience connects with you and what sets you apart in the music industry. Here's how we'll shape it together:"
       content="
         <ul style='list-style-type: disc; padding-left: 1.5rem; margin-bottom: 1rem;'>
-          <li class='mb-3'><strong>Define What Makes You Unique</strong> We’ll uncover the essence of your artistry by exploring:
+          <li class='mb-3'><strong>Define What Makes You Unique</strong> We'll uncover the essence of your artistry by exploring:
           <ul style='list-style-type: disc; padding-left: 1.5rem; margin-bottom: 1rem;'>
            <li class='ml-2 py-2'>The style, values, and message you want your music to convey.
            </li>
           </ul>
           </li>
-           <li class='mb-3'><strong>Create a Visual Identity:</strong> Your image should reflect who you are as an artist. I’ll help you design a consistent visual style that resonates with your music, including:
+           <li class='mb-3'><strong>Create a Visual Identity:</strong> Your image should reflect who you are as an artist. I'll help you design a consistent visual style that resonates with your music, including:
           <ul style='list-style-type: disc; padding-left: 1.5rem; margin-bottom: 1rem;'>
            <li class='ml-2 py-2'>Guidance on your personal style to ensure it aligns with your brand.
            </li>

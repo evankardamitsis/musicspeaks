@@ -16,9 +16,9 @@ const About = () => {
         </div>
 
         {/* Description */}
-        <div className="text-white text-center max-w-2xl lg:mt-[-5rem] ">
-          <p className="text-sm sm:text-base leading-relaxed">
-            <span className="bg-[#082FFF] px-2 py-1 font-medium inline-block mb-2">
+        <div className="text-white text-center max-w-2xl lg:mt-[-5rem]">
+          <p className="text-md leading-relaxed">
+            <span className="bg-[#082FFF] px-2 py-1 font-medium text-xl inline-block mb-2">
               Your music deserves to be heard,
             </span>{" "}
             and with well-crafted music marketing strategies, you can increase
@@ -27,22 +27,6 @@ const About = () => {
             planning a tour, effective music promotion strategies ensure your
             music doesn&apos;t go unnoticed.
           </p>
-        </div>
-
-        {/* Subheadings */}
-        <div className="flex flex-col md:flex-row md:justify-center gap-4 sm:gap-6 mb-8 sm:mb-12 w-full max-w-4xl mt-12">
-          {[
-            "PROMOTE A NEW RELEASE",
-            "INCREASE TICKET SALES",
-            "CREATE YOUR DIGITAL PRESENCE",
-          ].map((text) => (
-            <div
-              key={text}
-              className="flex items-center justify-center text-[#FFF107] px-4"
-            >
-              <h3 className="text-base sm:text-lg font-semibold">{text}</h3>
-            </div>
-          ))}
         </div>
       </div>
     </div>
