@@ -5,6 +5,8 @@ import Image from "next/image";
 import zuma from "@/app/assets/zuma.png";
 import formiggart from "@/app/assets/formiggart.png";
 import greeceOnTour from "@/app/assets/greeceOnTour.png";
+import rockwave from "@/app/assets/rockwave.png";
+import xlalala from "@/app/assets/xlalala.png";
 
 const Collaborators = () => {
   const images = [
@@ -15,6 +17,8 @@ const Collaborators = () => {
       alt: "Greece On Tour",
       link: "https://www.greece-on-tour.eu/en-gb",
     },
+    { src: rockwave.src, alt: "Rockwave", link: "https://rockwave.gr/" },
+    { src: xlalala.src, alt: "Xlalala", link: "https://www.xlalala.gr/" },
   ];
 
   return (
@@ -37,22 +41,22 @@ const Collaborators = () => {
         </div>
 
         {/* Images Grid */}
-        <div className="grid grid-cols-3 gap-3 sm:gap-6 max-w-3xl mx-auto">
+        <div className="grid grid-cols-3 gap-3 sm:gap-6 max-w-2xl mx-auto">
           {images.map((image, index) => (
             <a
               key={index}
               href={image.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="block w-full aspect-square bg-white p-2 sm:p-4 hover:opacity-90 transition-opacity"
+              className="block w-full aspect-square bg-white/90 p-1.5 sm:p-2 hover:opacity-90 transition-opacity rounded-sm"
             >
               <div className="relative w-full h-full">
                 <Image
                   src={image.src}
                   alt={image.alt}
                   fill
-                  className="object-contain"
-                  sizes="(max-width: 768px) 30vw, 33vw"
+                  className="object-contain p-1.5 sm:p-2"
+                  sizes="(max-width: 768px) 25vw, 30vw"
                 />
               </div>
             </a>
