@@ -4,6 +4,7 @@ import ArtistsHeading from "@/app/sections/Artists/ArtistsHeading";
 import IconImage from "@/app/components/IconImage";
 import galani from "@/app/assets/galani.png";
 import guppy from "@/app/assets/guppy.jpeg";
+import erasmia from "@/app/assets/erasmia.jpg";
 
 const Artists = () => {
   const images = [
@@ -19,6 +20,12 @@ const Artists = () => {
       name: "Guppy Fish",
       spotifyUrl: "https://open.spotify.com/artist/4sqss5faBke1GEY2IROHbO?si=VbZRB07sR7-kJHhB33ohlQ"
     },
+    {
+      src: erasmia.src,
+      alt: "Erasmia Markidi",
+      name: "Erasmia Markidi",
+      spotifyUrl: "https://open.spotify.com/artist/6yGCwFJ7PT2kBpIJoyv5nc?si=y0cGN8YeRpOmODoyVkXvAw"
+    }
   ];
 
   return (
