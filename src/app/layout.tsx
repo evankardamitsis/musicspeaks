@@ -49,9 +49,9 @@ export const metadata: Metadata = {
     description: 'We are dedicated to empowering independent artists through targeted paid media, creative promotional campaigns and customized digital music marketing strategies.',
     images: [
       {
-        url: '/musicspeaks_logo.svg',
-        width: 1200,
-        height: 630,
+        url: '/og-image.png',
+        width: 1000,
+        height: 149,
         alt: 'Music Speaks - Digital Music Marketing for Independent Artists',
       }
     ],
@@ -60,7 +60,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Music Speaks | Digital Music Marketing for Independent Artists',
     description: 'We are dedicated to empowering independent artists through targeted paid media, creative promotional campaigns and customized digital music marketing strategies.',
-    images: ['/musicspeaks_logo.svg'],
+    images: ['/og-image.png'],
     creator: '@musicspeaks', // Replace with your actual Twitter handle
   },
   verification: {
